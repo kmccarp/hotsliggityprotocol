@@ -7,7 +7,7 @@ import requests
 import matchrequest
 import match
 
-mpyq_path = os.path.abspath(os.path.join('lib\heroprotocol'))
+mpyq_path = os.path.abspath(os.path.join('vendor\heroprotocol'))
 print mpyq_path
 sys.path.append(mpyq_path)
 

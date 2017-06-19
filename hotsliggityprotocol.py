@@ -28,8 +28,9 @@ if __name__ == '__main__':
     
     match = match.Match();
     
+    # TODO: Pull .StormReplay files from its default install location, loop through it, & read in all *.StormReplay files
+
     # Set up an args parser to accept .StormReplay file
-    # TODO: Create a generic directory path to loop through & read in all *.StormReplay files
     parser = argparse.ArgumentParser()
     parser.add_argument('replay_file', help='.StormReplay file to load')
 

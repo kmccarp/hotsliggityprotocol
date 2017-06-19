@@ -36,3 +36,20 @@ class Match(object):
 
     def setMatchDateTime(self, matchDateTime):
         self.matchDateTime = matchDateTime;
+
+    # TODO: Complete Current Model
+    # matchType - init data, derived
+    # mapName - details
+    # matchLength - not sure
+    # heroName - details
+    # heroLevel - not sure
+    # matchmakingRating - calculated
+    # ratingAdjustmentPoints - calculated
+    # matchDateTime - details
+
+    # TODO: Changes for Future Model
+    # matchOutcome - details or init data
+    # talent choices - tracker events
+    # score result screen stats - tracker events
+    # teammates and enemy team player names and hero picks - details
+    # season - derived

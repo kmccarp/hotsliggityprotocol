@@ -105,6 +105,3 @@ ENV/
 
 *.SC2Replay
 *.StormReplay
-
-vendor/requests
-vendor/urllib3

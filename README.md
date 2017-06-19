@@ -3,6 +3,12 @@ Python library to parse .StormReplay files and upload to service model to HotSli
 
 Big thanks to [Blizzard's heroprotocol project](https://github.com/Blizzard/heroprotocol) for the inspiration.
 
+## Getting Started
+
+* Requires Python 2.7 to run
+* If Windows, need to have `Python27` and `Python27/Scripts` on your PATH
+* Currently need to run `$pip install requests`
+* Might also need to run `$pip install urllib3`
 
 ## Example Usage
 
@@ -26,8 +32,9 @@ python hotsliggityprotocol.py "Blackheart's Bay.StormReplay"
 
 `--attributeevents` = print attribute events, a table of attrid, namespace, and attribute values
 
+## TODOs
 
-## #TODO: Complete Current Model
+#### #TODO: Complete Current Model
 * **matchType** - _init data, derived_
 * **mapName** - _details_
 * **matchLength** - _not sure_
@@ -38,9 +45,11 @@ python hotsliggityprotocol.py "Blackheart's Bay.StormReplay"
 * **matchDateTime** - _details_
 
 
-## #TODO: Changes for Future Model
+#### #TODO: Changes for Future Model
 * **matchOutcome** - _details or init data_
 * **talent choices** - _tracker events_
 * **score result screen stats** - _tracker events_
 * **teammates and enemy team player names and hero picks** - _details_
 * **season** - _derived_
+
+#### #TODO: Figure out best method for dependency management for 'requests' and 'urllib3'

@@ -8,7 +8,6 @@ import matchrequest
 import match
 
 mpyq_path = os.path.abspath(os.path.join('vendor\heroprotocol'))
-print mpyq_path
 sys.path.append(mpyq_path)
 
 from mpyq import mpyq
@@ -19,8 +18,7 @@ class EventLogger:
         self._event_stats = {}
 
     def log(self, output, event):
-        # Write structure
-
+        # Write structure as JSON
         s = json.dumps(event, encoding="ISO-8859-1");
         print(s);
 
@@ -28,11 +26,11 @@ if __name__ == '__main__':
     
     match = match.Match();
     
-    # TODO: Pull .StormReplay files from its default install location, loop through it, & read in all *.StormReplay files
-
     # Set up an args parser to accept .StormReplay file
     parser = argparse.ArgumentParser()
     parser.add_argument('replay_file', help='.StormReplay file to load')
+
+    # TODO: Pull .StormReplay files from its default install location, loop through it, & read in all *.StormReplay files
 
     args = parser.parse_args()
 
@@ -67,9 +65,4 @@ if __name__ == '__main__':
     # Point to HotSliggityService locally
     url = 'http://localhost:8080/test'
 
-    matchRequest = matchrequest.MatchRequest();
-
-    matchRequest.matches[0] = match.__dict__;
-
-    # TODO: Figure out correct format for "data" attribute of post method below
-    requests.post(url, data=matchRequest);
+    requests.post(url, data=match.__dict__);

@@ -1,3 +1,4 @@
+# hotsliggityprotocol
 Python library to parse .StormReplay files and upload to service model to HotSliggityService
 
 Big thanks to [Blizzard's heroprotocol project](https://github.com/Blizzard/heroprotocol) for the inspiration.

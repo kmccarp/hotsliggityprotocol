@@ -7,8 +7,7 @@ Big thanks to [Blizzard's heroprotocol project](https://github.com/Blizzard/hero
 
 * Requires Python 2.7 to run
 * If Windows, need to have `Python27` and `Python27/Scripts` on your PATH
-* Currently need to run `$pip install requests`
-* Might also need to run `$pip install urllib3`
+* Need to run `$pip install -r requirements.txt` to get dependencies requests and urllib3
 
 ## Example Usage
 
@@ -51,5 +50,3 @@ python hotsliggityprotocol.py "Blackheart's Bay.StormReplay"
 * **score result screen stats** - _tracker events_
 * **teammates and enemy team player names and hero picks** - _details_
 * **season** - _derived_
-
-#### #TODO: Figure out best method for dependency management for 'requests' and 'urllib3'

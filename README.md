@@ -7,7 +7,8 @@ Big thanks to [Blizzard's heroprotocol project](https://github.com/Blizzard/hero
 
 * Requires Python 2.7 to run
 * If Windows, need to have `Python27` and `Python27/Scripts` on your PATH
-* Need to run `$pip install -r requirements.txt` to get dependencies requests and urllib3
+* Currently, need to copy a .StormReplay file to the heroprotocol project directory
+* May need to run `$pip install -r requirements.txt` to get dependencies requests and urllib3
 
 ## Example Usage
 
@@ -30,23 +31,3 @@ python hotsliggityprotocol.py "Blackheart's Bay.StormReplay"
 `--messageevents` print message events such as ping events
 
 `--attributeevents` = print attribute events, a table of attrid, namespace, and attribute values
-
-## TODOs
-
-#### #TODO: Complete Current Model
-* **matchType** - _init data, derived_
-* **mapName** - _details_
-* **matchLength** - _not sure_
-* **heroName** - _details_
-* **heroLevel** - _not sure_
-* **matchmakingRating** - _calculated_
-* **ratingAdjustmentPoints** - _calculated_
-* **matchDateTime** - _details_
-
-
-#### #TODO: Changes for Future Model
-* **matchOutcome** - _details or init data_
-* **talent choices** - _tracker events_
-* **score result screen stats** - _tracker events_
-* **teammates and enemy team player names and hero picks** - _details_
-* **season** - _derived_

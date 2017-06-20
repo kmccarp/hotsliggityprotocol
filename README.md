@@ -9,6 +9,7 @@ Big thanks to [Blizzard's heroprotocol project](https://github.com/Blizzard/hero
 * If Windows, need to have `Python27` and `Python27/Scripts` on your PATH
 * Currently, need to copy a .StormReplay file to the heroprotocol project directory
 * May need to run `$pip install -r requirements.txt` to get dependencies requests and urllib3
+* Will default to account name 'Funda'. If your account name is "BigWillie", you can change this by creating a 'hotslig.properties' file with `accountName=BigWillie` as the only line.
 
 ## Example Usage
 

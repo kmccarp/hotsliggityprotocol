@@ -6,6 +6,7 @@ import requests
 
 import matchrequest
 import match
+from accountname import get_account_name
 
 mpyq_path = os.path.abspath(os.path.join('vendor\heroprotocol'))
 sys.path.append(mpyq_path)
@@ -55,7 +56,7 @@ if __name__ == '__main__':
     details = protocol.decode_replay_details(contents)
     playerList = details['m_playerList']
     for playerName in playerList:
-        if playerName['m_name'] == "Funda":
+        if playerName['m_name'] == get_account_name():
             hero = playerName['m_hero'];
             match.setHeroName(hero);
             logger.log(sys.stdout, match.__dict__)
